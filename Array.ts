@@ -48,3 +48,13 @@ let personDetails: (string | number | string | boolean)[] = ["Ayyub Ruwaid Nader
 for (let i = 0; i < personDetails.length; i++) {
     console.log(personDetails[i]);
 }
+
+//Tuples : It's similar to the Union but different in rules. A tuple is an array with fixed size and known datatypes. They are stricter than regular arrays.
+
+let personStack: [string, string, number, string, boolean] = ["Ayyub Ruwaid Nader", "49 years old", 288827121, "AyyubRuwaidNader@armyspy.com", true]
+console.log(personStack);
+
+// personStack[0] = 35;
+// It will error out Type 'number' is not assignable to type 'string'.
+// console.log(personStack);
+
