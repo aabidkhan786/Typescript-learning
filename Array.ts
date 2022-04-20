@@ -44,7 +44,7 @@ arrStack.push("PeterDecker@teleworm.us")
 console.log(arrStack);
 
 // Union type : It's also used to store data of multiple types.
-let personDetails: (string | number | string | boolean)[] = ["Ayyub Ruwaid Nader", 288827121, "49 years old", true]
+let personDetails: (string | number | boolean)[] = ["Ayyub Ruwaid Nader", 288827121, "49 years old", true]
 for (let i = 0; i < personDetails.length; i++) {
     console.log(personDetails[i]);
 }
