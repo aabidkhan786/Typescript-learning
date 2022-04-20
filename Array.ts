@@ -39,6 +39,12 @@ console.log(books);
 
 
 // And now we have the array of any types
-let arrStack = ["Peter Decker", 5025745514, true]
+let arrStack: any = ["Peter Decker", 5025745514, true]
 arrStack.push("PeterDecker@teleworm.us")
 console.log(arrStack);
+
+// Union type : It's also used to store data of multiple types.
+let personDetails: (string | number | string | boolean)[] = ["Ayyub Ruwaid Nader", 288827121, "49 years old", true]
+for (let i = 0; i < personDetails.length; i++) {
+    console.log(personDetails[i]);
+}

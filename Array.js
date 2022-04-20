@@ -30,3 +30,8 @@ console.log(books);
 var arrStack = ["Peter Decker", 5025745514, true];
 arrStack.push("PeterDecker@teleworm.us");
 console.log(arrStack);
+// Union type : It's also used to store data of multiple types.
+var personDetails = ["Ayyub Ruwaid Nader", 288827121, "49 years old", true];
+for (var i = 0; i < personDetails.length; i++) {
+    console.log(personDetails[i]);
+}
