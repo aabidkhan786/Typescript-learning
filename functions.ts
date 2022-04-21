@@ -46,3 +46,16 @@ function SumOfArray(a: number, b: number, ...rest: number[]) {
 }
 
 console.log(SumOfArray(10, 25, 10, 254, 478, 102, 889));
+
+
+// Alias Function
+type factorial = (value: number) => void;
+
+const findFactorial: factorial = (value) => {
+    let result = 1;
+    for (let j = 1; j <= value; j++) {
+        result = result * j;
+    }
+    console.log("The factorial of " + value + " is: " + result);
+}
+findFactorial(10)
