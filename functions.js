@@ -44,9 +44,14 @@ function SumOfArray(a, b) {
 console.log(SumOfArray(10, 25, 10, 254, 478, 102, 889));
 var findFactorial = function (value) {
     var result = 1;
-    for (var j = 1; j <= value; j++) {
-        result = result * j;
+    if (value == 0) {
+        console.log("The factorial of " + value + "! is: 1 ");
     }
-    console.log("The factorial of " + value + " is: " + result);
+    else {
+        for (var j = 1; j <= value; j++) {
+            result = result * j;
+        }
+        console.log("The factorial of " + value + "! is: " + result);
+    }
 };
-findFactorial(10);
+findFactorial(12);

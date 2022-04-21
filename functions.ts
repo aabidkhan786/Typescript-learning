@@ -53,9 +53,14 @@ type factorial = (value: number) => void;
 
 const findFactorial: factorial = (value) => {
     let result = 1;
-    for (let j = 1; j <= value; j++) {
-        result = result * j;
+    if (value == 0) {
+        console.log("The factorial of " + value + "! is: 1 ");
     }
-    console.log("The factorial of " + value + " is: " + result);
+    else {
+        for (let j = 1; j <= value; j++) {
+            result = result * j;
+        }
+        console.log("The factorial of " + value + "! is: " + result);
+    }
 }
-findFactorial(10)
+findFactorial(12)
