@@ -32,3 +32,10 @@ function pow(value: number, exponent: number = 10) {
     return value ** exponent;
 }
 console.log(pow(2));
+
+//Named Parameters
+function divide({ dividend, divisor }: { dividend: number, divisor: number }) {
+    return dividend / divisor;
+}
+
+console.log(divide({ dividend: 10, divisor: 2 }));
