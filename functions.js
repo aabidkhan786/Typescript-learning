@@ -8,3 +8,16 @@ var perimeter = function (side) {
     return 'The perimeter is : ' + (4 * side).toFixed(2);
 };
 console.log(perimeter(2.5));
+// Return type : void
+// The type void can be used to indicate a function doesn't return any value.
+function printHello() {
+    console.log('Hello!');
+}
+printHello();
+//What is we have the optionable parameters 
+// the `?` operator here marks parameter `c` as optional
+function add(a, b, c) {
+    return a + b + (c || 0);
+}
+console.log(add(10, 52));
+console.log(add(10, 52, 85));
