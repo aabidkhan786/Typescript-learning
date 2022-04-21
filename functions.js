@@ -21,3 +21,9 @@ function add(a, b, c) {
 }
 console.log(add(10, 52));
 console.log(add(10, 52, 85));
+// Default paramter in TypeScript
+function pow(value, exponent) {
+    if (exponent === void 0) { exponent = 10; }
+    return Math.pow(value, exponent);
+}
+console.log(pow(2));

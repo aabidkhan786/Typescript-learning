@@ -27,4 +27,8 @@ function add(a: number, b: number, c?: number) {
 console.log(add(10, 52));
 console.log(add(10, 52, 85));
 
-
+// Default paramter in TypeScript
+function pow(value: number, exponent: number = 10) {
+    return value ** exponent;
+}
+console.log(pow(2));
