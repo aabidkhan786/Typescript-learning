@@ -21,3 +21,25 @@ class Person_Detail {
 const Jadranka = new Person_Detail("Jadranka Filipović", "JadrankaFilipovic@dayrep.com", 8185928645, true)
 
 Jadranka.greeting()
+
+//Class to perform operation on two object of the same classes
+class Coordinates {
+    x: number;
+    y: number;
+
+    constructor(a: number, b: number) {
+        this.x = a;
+        this.y = b;
+    }
+
+    add(point: Coordinates) {
+        return new Coordinates(this.x + point.x, this.y + point.y);
+    }
+}
+
+var p1 = new Coordinates(10, 15);
+var p2 = new Coordinates(20, 56);
+var p3 = p1.add(p2);
+
+console.log(p3);
+
