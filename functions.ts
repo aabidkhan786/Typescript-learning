@@ -39,3 +39,10 @@ function divide({ dividend, divisor }: { dividend: number, divisor: number }) {
 }
 
 console.log(divide({ dividend: 10, divisor: 2 }));
+
+// Rest Parameters
+function SumOfArray(a: number, b: number, ...rest: number[]) {
+    return a + b + rest.reduce((c, d) => c + d, 0)
+}
+
+console.log(SumOfArray(10, 25, 10, 254, 478, 102, 889));

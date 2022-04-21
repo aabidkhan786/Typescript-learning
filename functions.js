@@ -33,3 +33,12 @@ function divide(_a) {
     return dividend / divisor;
 }
 console.log(divide({ dividend: 10, divisor: 2 }));
+// Rest Parameters
+function SumOfArray(a, b) {
+    var rest = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        rest[_i - 2] = arguments[_i];
+    }
+    return a + b + rest.reduce(function (c, d) { return c + d; }, 0);
+}
+console.log(SumOfArray(10, 25, 10, 254, 478, 102, 889));
