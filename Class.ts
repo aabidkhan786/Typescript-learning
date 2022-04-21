@@ -43,3 +43,24 @@ var p3 = p1.add(p2);
 
 console.log(p3);
 
+
+// Extend Class Performance
+class Coordinate3D extends Coordinates {
+    z: number;
+
+    constructor(a: number, b: number, c: number) {
+        super(a, b);
+        this.z = c;
+    }
+
+    add(point: Coordinate3D) {
+        var point2D = super.add(point)
+        return new Coordinate3D(point2D.x, point2D.y, this.z + point.z)
+    }
+}
+
+var z1 = new Coordinate3D(10, 20, 30)
+var z2 = new Coordinate3D(20, 30, 40)
+var z3 = z1.add(z2);
+
+console.log(z3);
