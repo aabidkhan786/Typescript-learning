@@ -63,4 +63,13 @@ const findFactorial: factorial = (value) => {
         console.log("The factorial of " + value + "! is: " + result);
     }
 }
-findFactorial(12)
+findFactorial(12);
+
+// IIFE : Immediately Invoked Function Expression
+(function counter() {
+    let i = 0;
+    while (i <= 50) {
+        console.log(i);
+        i++;
+    }
+})();

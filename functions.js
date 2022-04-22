@@ -55,3 +55,11 @@ var findFactorial = function (value) {
     }
 };
 findFactorial(12);
+// IIFE : Immediately Invoked Function Expression
+(function counter() {
+    var i = 0;
+    while (i <= 50) {
+        console.log(i);
+        i++;
+    }
+})();
