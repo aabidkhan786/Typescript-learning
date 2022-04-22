@@ -62,3 +62,29 @@ var z1 = new Coordinate3D(10, 20, 30);
 var z2 = new Coordinate3D(20, 30, 40);
 var z3 = z1.add(z2);
 console.log(z3);
+// Static Property of the class
+var counter = /** @class */ (function () {
+    function counter() {
+        counter.instances++;
+    }
+    counter.instances = 0;
+    return counter;
+}());
+var s1 = new counter();
+var s2 = new counter();
+console.log(counter.instances);
+//Adding Array in class and accessing them as an object
+var Foo = /** @class */ (function () {
+    function Foo() {
+        this.members = []; // Initialize directly
+    }
+    Foo.prototype.add = function (x) {
+        this.members.push(x);
+    };
+    return Foo;
+}());
+var addFoo = new Foo();
+addFoo.add("Jadranka");
+addFoo.add("Mariam Gray");
+addFoo.add("Rachel Newbold");
+console.log(addFoo.members);

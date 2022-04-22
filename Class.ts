@@ -64,3 +64,29 @@ var z2 = new Coordinate3D(20, 30, 40)
 var z3 = z1.add(z2);
 
 console.log(z3);
+
+// Static Property of the class
+class counter {
+    static instances = 0;
+    constructor() {
+        counter.instances++;
+    }
+}
+
+var s1 = new counter();
+var s2 = new counter();
+console.log(counter.instances);
+
+//Adding Array in class and accessing them as an object
+class Foo {
+    members = [];  // Initialize directly
+    add(x) {
+        this.members.push(x);
+    }
+}
+
+var addFoo = new Foo()
+addFoo.add("Jadranka")
+addFoo.add("Mariam Gray")
+addFoo.add("Rachel Newbold")
+console.log(addFoo.members);
