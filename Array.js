@@ -41,3 +41,14 @@ console.log(personStack);
 // personStack[0] = 35;
 // It will error out Type 'number' is not assignable to type 'string'.
 // console.log(personStack);
+// For...in to print out the index of array
+var someArray = [9, 2, 5];
+for (var item1 in someArray) {
+    console.log(item1); // 0,1,2
+}
+// For...of to print the value of index
+var some_Array = [9, 2, 5];
+for (var _i = 0, someArray_1 = someArray; _i < someArray_1.length; _i++) {
+    var item = someArray_1[_i];
+    console.log(item); // 9,2,5
+}
