@@ -1,3 +1,4 @@
+// Object initilization and Destructring
 var student = {
     name: 'John Doe',
     age: 16,
@@ -21,3 +22,21 @@ function displaySummary(_a) {
     console.log('Your Science score is ' + science);
 }
 displaySummary(student);
+// Class 
+var StudentsData = /** @class */ (function () {
+    function StudentsData(a, b, c, d) {
+        var _this = this;
+        this.displayResults = function () {
+            console.log("Hello, " + _this.full_name);
+            console.log("You have scored, In Maths: " + _this.scores.maths);
+            console.log("In Science: " + _this.scores.science);
+        };
+        this.full_name = a;
+        this.age = b;
+        this.scores.maths = c;
+        this.scores.science = d;
+    }
+    return StudentsData;
+}());
+var Ruby = new StudentsData("Ruby Walker", 25, 89, 95);
+Ruby.displayResults();

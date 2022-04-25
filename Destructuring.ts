@@ -1,3 +1,4 @@
+// Object initilization and Destructring
 const student = {
     name: 'John Doe',
     age: 16,
@@ -24,4 +25,28 @@ function displaySummary({ name, scores: { maths = 0, english = 0, science = 0 } 
 
 displaySummary(student);
 
+// Class 
+class StudentsData {
+    full_name: string;
+    age: number
+    scores: {
+        maths: number;
+        science: number;
+    }
 
+    constructor(a: string, b: number, c: number, d: number) {
+        this.full_name = a;
+        this.age = b;
+        this.scores.maths = c;
+        this.scores.science = d;
+    }
+
+    displayResults = () => {
+        console.log("Hello, " + this.full_name);
+        console.log("You have scored, In Maths: " + this.scores.maths);
+        console.log("In Science: " + this.scores.science);
+    }
+}
+
+const Ruby = new StudentsData("Ruby Walker", 25, 89, 95)
+Ruby.displayResults()
