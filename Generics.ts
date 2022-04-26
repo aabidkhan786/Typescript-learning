@@ -38,3 +38,18 @@ console.log(print_data(typeof (<boolean>(true))));
 
 // So, Generics allow us to create reusable blocks of code which can be used for different types. 
 
+// In the above functions we have the basic generic type but now what if we want to have it to be explicitly typed.
+function Print_data<T extends string>(data: T) {     // Now this function will only return the string type and accept argument to be of string types.
+    return data
+}
+
+// console.log(Print_data(25)); 
+// If i try to printout the result it will error out error: Argument of type 'number' is not assignable to parameter of type 'string'
+
+console.log(Print_data("Tony L. Chase"));
+// As we can see the above function is explicitly string typed. If we try to run out with other parameters then it will generate the compilation error.
+
+
+
+
+
