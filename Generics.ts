@@ -31,3 +31,10 @@ console.log(typeof (print_data<number>(625)));
 console.log(print_data(typeof (<number>(625))));
 // Now we have the functions to be numbers type, argument to be numbers types and return value to be of numbers types.
 
+console.log(print_data<boolean>(true));
+console.log(typeof (print_data<boolean>(true)));
+console.log(print_data(typeof (<boolean>(true))));
+// The same way goes for the functions to be of boolean type, argument to be boolean types and return value to be of boolean types.
+
+// So, Generics allow us to create reusable blocks of code which can be used for different types. 
+
