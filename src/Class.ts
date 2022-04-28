@@ -79,7 +79,7 @@ console.log(counter.instances);
 
 //Adding Array in class and accessing them as an object
 class Foo {
-    members = [];  // Initialize directly
+    members:string[] = [];  // Initialize directly
     add(x:string) {
         this.members.push(x);
     }
