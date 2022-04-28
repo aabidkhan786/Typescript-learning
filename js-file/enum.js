@@ -33,3 +33,13 @@ console.log(StatusCodes.Success);
 console.log(StatusCodes.Accepted);
 console.log(StatusCodes.BadRequest);
 // String Enum
+var Print_Media;
+(function (Print_Media) {
+    Print_Media["Newspaper"] = "NEWSPAPER";
+    Print_Media["Newsletter"] = "NEWSLETTER";
+    Print_Media["Magazine"] = "MAGAZINE";
+    Print_Media["Book"] = "BOOK";
+})(Print_Media || (Print_Media = {}));
+// Access String Enum 
+console.log(Print_Media.Newspaper);
+console.log(Print_Media['Magazine']);

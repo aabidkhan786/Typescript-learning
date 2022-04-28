@@ -1,16 +1,16 @@
 // Numeric Enum
-enum PrintMedia{
+enum PrintMedia {
     Newspaper = 0,
     Newsletter,
     Magazine,
     Book
 }
 
-function getMedia(mediaName: string): PrintMedia{
-    if( mediaName === 'Forbes' || mediaName === 'Outlook' ){
+function getMedia(mediaName: string): PrintMedia {
+    if (mediaName === 'Forbes' || mediaName === 'Outlook') {
         return PrintMedia.Magazine;
     }
-    else if( mediaName === 'Times Of India'){
+    else if (mediaName === 'Times Of India') {
         return PrintMedia.Newspaper;
     }
 }
@@ -26,11 +26,22 @@ enum StatusCodes {
     Success = 200,
     Accepted = 202,
     BadRequest = 400
-  };
-  
+};
+
 console.log(StatusCodes.NotFound);
 console.log(StatusCodes.Success);
 console.log(StatusCodes.Accepted);
 console.log(StatusCodes.BadRequest);
 
 // String Enum
+enum Print_Media {
+    Newspaper = "NEWSPAPER",
+    Newsletter = "NEWSLETTER",
+    Magazine = "MAGAZINE",
+    Book = "BOOK"
+}
+// Access String Enum 
+console.log(Print_Media.Newspaper);
+console.log(Print_Media['Magazine']);
+
+
