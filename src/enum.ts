@@ -20,3 +20,17 @@ console.log("Media Code: " + mediatype);
 mediatype = getMedia('Times Of India');
 console.log("Media Code: " + mediatype);
 
+// Another Num Enum
+enum StatusCodes {
+    NotFound = 404,
+    Success = 200,
+    Accepted = 202,
+    BadRequest = 400
+  };
+  
+console.log(StatusCodes.NotFound);
+console.log(StatusCodes.Success);
+console.log(StatusCodes.Accepted);
+console.log(StatusCodes.BadRequest);
+
+// String Enum
